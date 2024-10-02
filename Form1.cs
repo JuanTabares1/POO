@@ -69,8 +69,10 @@ namespace inventario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form MsgBox = new MsgBox();
-            MsgBox.Show();
+            if (MessageBox.Show("¿Salir?", "Esta apunto de salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnlogin_Click(object sender, EventArgs e)

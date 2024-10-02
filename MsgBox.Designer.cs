@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -38,23 +38,14 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkViolet;
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 45);
+            this.panel1.Size = new System.Drawing.Size(265, 112);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Estas a punto de salir... ";
             // 
             // label2
             // 
@@ -62,14 +53,25 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(145, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 15);
+            this.label2.Size = new System.Drawing.Size(78, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Seguro?";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(3, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Estas a punto de salir... ";
+            // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkViolet;
+            this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(41, 72);
@@ -82,7 +84,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkViolet;
+            this.button2.BackColor = System.Drawing.Color.Silver;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(147, 72);
@@ -95,9 +97,9 @@
             // 
             // MsgBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumOrchid;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(265, 112);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
@@ -107,6 +109,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MsgBox";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
