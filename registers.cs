@@ -164,7 +164,7 @@ catch (MySqlException ex)
             if (MessageBox.Show("¿Salir?", "Esta apunto de salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
             {
                 Application.Exit();
-            }
+            } 
         }
 
         private void registers_Load(object sender, EventArgs e)
