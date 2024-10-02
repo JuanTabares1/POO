@@ -24,7 +24,7 @@ namespace inventario
             if (txtuser.Text == "")
             {
                 txtuser.Text = "USUARIO";
-                txtuser.ForeColor = Color.DimGray;
+                txtuser.ForeColor = Color.White;
             }
         }
 
@@ -42,7 +42,7 @@ namespace inventario
             if (txtpass.Text == "")
             {
                 txtpass.Text = "CONTRASEÑA";
-                txtpass.ForeColor = Color.DimGray;
+                txtpass.ForeColor = Color.White;
                 txtpass.UseSystemPasswordChar = false;
             }
         }

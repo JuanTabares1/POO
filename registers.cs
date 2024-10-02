@@ -23,7 +23,7 @@ namespace inventario
             if (txtcorreo.Text == "")
             {
                 txtcorreo.Text = "CORREO";
-                txtcorreo.ForeColor = Color.DimGray;
+                txtcorreo.ForeColor = Color.White;
             }
         }
 
@@ -41,7 +41,7 @@ namespace inventario
             if (txtruser.Text == "")
             {
                 txtruser.Text = "USUARIO";
-                txtruser.ForeColor = Color.DimGray;
+                txtruser.ForeColor = Color.White;
             }
         }
 
@@ -59,7 +59,7 @@ namespace inventario
             if (txtrpass.Text == "")
             {
                 txtrpass.Text = "CONTRASEÑA";
-                txtrpass.ForeColor = Color.DimGray;
+                txtrpass.ForeColor = Color.White;
                 txtrpass.UseSystemPasswordChar = false;
             }
         }
@@ -79,7 +79,7 @@ namespace inventario
             if (txtrpass2.Text == "")
             {
                 txtrpass2.Text = "CONFIRMAR CONTRASEÑA";
-                txtrpass2.ForeColor = Color.DimGray;
+                txtrpass2.ForeColor = Color.White;
                 txtrpass2.UseSystemPasswordChar = false;
             }
         }
