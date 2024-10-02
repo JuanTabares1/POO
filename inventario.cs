@@ -37,5 +37,12 @@ namespace inventario
         {
 
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form page1 = new page1();
+            page1.Show();
+        }
     }
 }
