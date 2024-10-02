@@ -10,27 +10,26 @@ using System.Windows.Forms;
 
 namespace inventario
 {
-    public partial class inventario : Form
+    public partial class MsgBox : Form
     {
-        public inventario()
+        public MsgBox()
         {
             InitializeComponent();
         }
 
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void inventario_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Form MsgBox = new MsgBox();
-            MsgBox.Show();
+            this.Close();
         }
     }
 }

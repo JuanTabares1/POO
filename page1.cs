@@ -36,10 +36,8 @@ namespace inventario
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Form Form1 = new Form1();
-            Form1.Show();
-
-            this.Hide();
+            Form MsgBox = new MsgBox();
+            MsgBox.Show();
         }
 
         private void btnUser_Click(object sender, EventArgs e)
