@@ -257,7 +257,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.Location = new System.Drawing.Point(556, 116);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(38, 25);
             this.iconButton1.TabIndex = 12;
@@ -279,10 +279,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridProducts);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "inventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inventario";
+            this.Load += new System.EventHandler(this.inventario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
