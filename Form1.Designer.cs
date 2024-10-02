@@ -47,9 +47,10 @@
             this.muestra.AutoSize = true;
             this.muestra.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.muestra.ForeColor = System.Drawing.Color.White;
-            this.muestra.Location = new System.Drawing.Point(385, 225);
+            this.muestra.Location = new System.Drawing.Point(578, 346);
+            this.muestra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.muestra.Name = "muestra";
-            this.muestra.Size = new System.Drawing.Size(75, 21);
+            this.muestra.Size = new System.Drawing.Size(109, 30);
             this.muestra.TabIndex = 35;
             this.muestra.Text = "Mostrar";
             this.muestra.UseVisualStyleBackColor = true;
@@ -59,9 +60,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(219, 328);
+            this.label1.Location = new System.Drawing.Point(328, 505);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(178, 20);
             this.label1.TabIndex = 34;
             this.label1.Text = "¿No tienes una cuenta?";
             // 
@@ -70,9 +72,10 @@
             this.linkpass.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linkpass.AutoSize = true;
             this.linkpass.LinkColor = System.Drawing.Color.White;
-            this.linkpass.Location = new System.Drawing.Point(205, 416);
+            this.linkpass.Location = new System.Drawing.Point(308, 640);
+            this.linkpass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkpass.Name = "linkpass";
-            this.linkpass.Size = new System.Drawing.Size(148, 13);
+            this.linkpass.Size = new System.Drawing.Size(218, 20);
             this.linkpass.TabIndex = 33;
             this.linkpass.TabStop = true;
             this.linkpass.Text = "¿Has olvidado la contraseña?";
@@ -81,9 +84,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(99, 200);
+            this.label5.Location = new System.Drawing.Point(148, 308);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(361, 13);
+            this.label5.Size = new System.Drawing.Size(540, 20);
             this.label5.TabIndex = 32;
             this.label5.Text = "___________________________________________________________";
             // 
@@ -91,9 +95,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(99, 144);
+            this.label4.Location = new System.Drawing.Point(148, 222);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(361, 13);
+            this.label4.Size = new System.Drawing.Size(540, 20);
             this.label4.TabIndex = 31;
             this.label4.Text = "___________________________________________________________";
             // 
@@ -102,10 +107,11 @@
             this.txtpass.BackColor = System.Drawing.Color.DarkViolet;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtpass.Location = new System.Drawing.Point(103, 178);
+            this.txtpass.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txtpass.Location = new System.Drawing.Point(154, 274);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(356, 19);
+            this.txtpass.Size = new System.Drawing.Size(534, 28);
             this.txtpass.TabIndex = 30;
             this.txtpass.Text = "CONTRASEÑA";
             this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -117,10 +123,11 @@
             this.txtuser.BackColor = System.Drawing.Color.DarkViolet;
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser.ForeColor = System.Drawing.Color.Black;
-            this.txtuser.Location = new System.Drawing.Point(101, 122);
+            this.txtuser.ForeColor = System.Drawing.Color.White;
+            this.txtuser.Location = new System.Drawing.Point(152, 188);
+            this.txtuser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(356, 19);
+            this.txtuser.Size = new System.Drawing.Size(534, 28);
             this.txtuser.TabIndex = 29;
             this.txtuser.Text = "USUARIO";
             this.txtuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -132,9 +139,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Black", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(175, 36);
+            this.label2.Location = new System.Drawing.Point(262, 55);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 40);
+            this.label2.Size = new System.Drawing.Size(340, 59);
             this.label2.TabIndex = 27;
             this.label2.Text = "Iniciar Sesiòn";
             // 
@@ -142,21 +150,23 @@
             // 
             this.lblErrorMessage.AutoSize = true;
             this.lblErrorMessage.ForeColor = System.Drawing.Color.White;
-            this.lblErrorMessage.Location = new System.Drawing.Point(100, 231);
+            this.lblErrorMessage.Location = new System.Drawing.Point(150, 355);
+            this.lblErrorMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblErrorMessage.Name = "lblErrorMessage";
-            this.lblErrorMessage.Size = new System.Drawing.Size(10, 13);
+            this.lblErrorMessage.Size = new System.Drawing.Size(13, 20);
             this.lblErrorMessage.TabIndex = 28;
             this.lblErrorMessage.Text = ".";
             // 
             // btnregistrarse
             // 
             this.btnregistrarse.BackColor = System.Drawing.Color.MediumOrchid;
-            this.btnregistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnregistrarse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregistrarse.ForeColor = System.Drawing.Color.LightGray;
-            this.btnregistrarse.Location = new System.Drawing.Point(101, 352);
+            this.btnregistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnregistrarse.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrarse.ForeColor = System.Drawing.Color.White;
+            this.btnregistrarse.Location = new System.Drawing.Point(152, 542);
+            this.btnregistrarse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnregistrarse.Name = "btnregistrarse";
-            this.btnregistrarse.Size = new System.Drawing.Size(356, 48);
+            this.btnregistrarse.Size = new System.Drawing.Size(534, 74);
             this.btnregistrarse.TabIndex = 26;
             this.btnregistrarse.Text = "REGISTRARSE";
             this.btnregistrarse.UseVisualStyleBackColor = false;
@@ -166,12 +176,13 @@
             // 
             this.btnlogin.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnlogin.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnlogin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnlogin.Location = new System.Drawing.Point(101, 267);
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.ForeColor = System.Drawing.Color.White;
+            this.btnlogin.Location = new System.Drawing.Point(152, 411);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(356, 48);
+            this.btnlogin.Size = new System.Drawing.Size(534, 74);
             this.btnlogin.TabIndex = 25;
             this.btnlogin.Text = "ACCEDER";
             this.btnlogin.UseVisualStyleBackColor = false;
@@ -180,10 +191,11 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(533, 1);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(800, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 30);
+            this.button1.Size = new System.Drawing.Size(44, 46);
             this.button1.TabIndex = 36;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
@@ -191,10 +203,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
-            this.ClientSize = new System.Drawing.Size(563, 461);
+            this.ClientSize = new System.Drawing.Size(844, 709);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.muestra);
             this.Controls.Add(this.label1);
@@ -209,7 +221,6 @@
             this.Controls.Add(this.btnlogin);
             this.ForeColor = System.Drawing.Color.DarkViolet;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

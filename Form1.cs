@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,10 +73,31 @@ namespace inventario
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            Form page1 = new page1();
-            page1.Show();
+            string username = txtuser.Text;
+            string pass = txtpass.Text;
+            MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=1234");
+            try
+            {
+                con.Open();
+            }
+            catch (MySqlException ex) { MessageBox.Show("Error " + ex.ToString()); }
+            String sql = "select user,pass from users where user ='" + username + "' AND pass ='" + pass + "'";
+            MySqlCommand comando = new MySqlCommand(sql, con);
+            comando.Parameters.AddWithValue("@username", username);
+            comando.Parameters.AddWithValue("@password", pass);
+            MySqlDataReader read = comando.ExecuteReader();
+            if (read.Read())
+            {
+                Form page1 = new page1();
+                page1.Show();
 
-            this.Hide();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Nombre de usuario o contraseña incorrectos.");
+            }
+
             if (txtuser.Text != "USUARIO")
             {
                 if (txtpass.Text != "CONTRASEÑA")
@@ -85,6 +107,7 @@ namespace inventario
             }
             else msgError("Porfavor ingrese el usuario");
         }
+        
 
         private void btnregistrarse_Click(object sender, EventArgs e)
         {
