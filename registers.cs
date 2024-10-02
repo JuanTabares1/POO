@@ -163,9 +163,7 @@ catch (MySqlException ex)
         {
             if (MessageBox.Show("¿Salir?", "Esta apunto de salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
             {
-                this.Hide();
-                Form Form1 = new Form1();
-                Form1.Show();
+                Application.Exit();
             }
         }
 

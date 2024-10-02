@@ -126,7 +126,7 @@
             this.txtruser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtruser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtruser.ForeColor = System.Drawing.Color.White;
-            this.txtruser.Location = new System.Drawing.Point(110, 152);
+            this.txtruser.Location = new System.Drawing.Point(110, 147);
             this.txtruser.Name = "txtruser";
             this.txtruser.Size = new System.Drawing.Size(286, 19);
             this.txtruser.TabIndex = 29;
@@ -157,6 +157,7 @@
             this.txtcorreo.ForeColor = System.Drawing.Color.White;
             this.txtcorreo.Location = new System.Drawing.Point(110, 84);
             this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtcorreo.Size = new System.Drawing.Size(286, 19);
             this.txtcorreo.TabIndex = 24;
             this.txtcorreo.Text = "CORREO";
@@ -195,6 +196,9 @@
             this.btnregistrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnregistrar.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnregistrar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnregistrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnregistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnregistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnregistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnregistrar.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregistrar.ForeColor = System.Drawing.Color.White;
@@ -238,7 +242,7 @@
             this.Controls.Add(this.btnregresar);
             this.Controls.Add(this.btnregistrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "registers";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

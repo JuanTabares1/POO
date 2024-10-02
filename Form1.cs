@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace inventario
 {
     public partial class Form1 : Form
@@ -68,7 +69,10 @@ namespace inventario
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("¿Salir?", "Esta apunto de salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
