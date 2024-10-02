@@ -141,5 +141,10 @@ namespace inventario
                 Form1.Show();
             }
         }
+
+        private void registers_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
