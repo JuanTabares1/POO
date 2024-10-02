@@ -33,8 +33,13 @@ namespace inventario
 
             this.Hide();
         }
-     
 
-        
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Form Form1 = new Form1();
+            Form1.Show();
+
+            this.Hide();
+        }
     }
 }
