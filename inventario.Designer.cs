@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,7 +38,6 @@
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.inventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnSalir = new System.Windows.Forms.Button();
             this.gridProducts = new System.Windows.Forms.DataGridView();
@@ -47,13 +45,14 @@
             this.PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDeleteProduct
             // 
-            this.btnDeleteProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDeleteProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteProduct.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnDeleteProduct.FlatAppearance.BorderSize = 0;
             this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -69,7 +68,9 @@
             // 
             // btnEditProduct
             // 
-            this.btnEditProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnEditProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditProduct.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnEditProduct.FlatAppearance.BorderSize = 0;
             this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -85,7 +86,9 @@
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddProduct.BackColor = System.Drawing.Color.MediumOrchid;
             this.btnAddProduct.FlatAppearance.BorderSize = 0;
             this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -101,15 +104,17 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(50, 178);
+            this.txtSearch.Location = new System.Drawing.Point(85, 148);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(762, 38);
+            this.txtSearch.Size = new System.Drawing.Size(762, 47);
             this.txtSearch.TabIndex = 7;
             // 
             // label1
@@ -127,7 +132,9 @@
             // 
             // iconButton1
             // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.iconButton1.BackColor = System.Drawing.Color.MediumOrchid;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.ForeColor = System.Drawing.Color.White;
@@ -135,9 +142,9 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(825, 178);
+            this.iconButton1.Location = new System.Drawing.Point(795, 148);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(66, 38);
+            this.iconButton1.Size = new System.Drawing.Size(52, 47);
             this.iconButton1.TabIndex = 12;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.iconButton1.UseVisualStyleBackColor = false;
@@ -168,6 +175,9 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             this.gridProducts.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridProducts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridProducts.BackgroundColor = System.Drawing.Color.White;
             this.gridProducts.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridProducts.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -216,7 +226,7 @@
             this.gridProducts.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gridProducts.RowTemplate.Height = 25;
             this.gridProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProducts.Size = new System.Drawing.Size(820, 368);
+            this.gridProducts.Size = new System.Drawing.Size(897, 465);
             this.gridProducts.TabIndex = 14;
             // 
             // ID
@@ -274,7 +284,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inventario";
             this.Load += new System.EventHandler(this.inventario_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.inventarioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -343,7 +352,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn visibleDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paddingDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imeModeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource inventarioBindingSource;
         private System.Windows.Forms.DataGridView gridProducts;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCTO;

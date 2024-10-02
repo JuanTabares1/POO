@@ -32,5 +32,10 @@ namespace inventario
             Form MsgBox = new MsgBox();
             MsgBox.Show();
         }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
