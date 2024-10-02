@@ -41,5 +41,13 @@ namespace inventario
 
             this.Hide();
         }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Esta", "Funcionando", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

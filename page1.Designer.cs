@@ -35,8 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnProducts = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnUser = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +105,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkViolet;
+            this.panel2.Controls.Add(this.btnUser);
             this.panel2.Controls.Add(this.btnProducts);
             this.panel2.Controls.Add(this.btnCerrar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -112,6 +114,34 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(54, 464);
             this.panel2.TabIndex = 40;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::inventario.Properties.Resources.fondo3;
+            this.pictureBox1.Location = new System.Drawing.Point(54, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(814, 464);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnUser
+            // 
+            this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUser.FlatAppearance.BorderSize = 0;
+            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btnUser.Image = global::inventario.Properties.Resources.usuario__2_;
+            this.btnUser.Location = new System.Drawing.Point(0, 49);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(54, 53);
+            this.btnUser.TabIndex = 4;
+            this.btnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUser.UseVisualStyleBackColor = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnProducts
             // 
@@ -129,18 +159,6 @@
             this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProducts.UseVisualStyleBackColor = false;
             this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::inventario.Properties.Resources.fondo3;
-            this.pictureBox1.Location = new System.Drawing.Point(54, 48);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(814, 464);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
             // 
             // page1
             // 
@@ -174,5 +192,6 @@
         private System.Windows.Forms.Panel panel2;
         protected System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnUser;
     }
 }
