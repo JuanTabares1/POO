@@ -161,12 +161,8 @@ catch (MySqlException ex)
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Salir?", "Esta apunto de salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
-            {
-                this.Hide();
-                Form Form1 = new Form1();
-                Form1.Show();
-            }
+            Form MsgBox = new MsgBox();
+            MsgBox.Show();
         }
 
         private void registers_Load(object sender, EventArgs e)
