@@ -48,14 +48,12 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 650);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(0, 412);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 80);
+            this.button1.Size = new System.Drawing.Size(54, 52);
             this.button1.TabIndex = 38;
-            this.button1.Text = "X";
+            this.button1.Text = "7";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -65,19 +63,19 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1302, 74);
+            this.panel1.Size = new System.Drawing.Size(868, 48);
             this.panel1.TabIndex = 39;
             // 
             // lblpage
             // 
             this.lblpage.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblpage.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpage.ForeColor = System.Drawing.Color.White;
-            this.lblpage.Location = new System.Drawing.Point(1137, 0);
-            this.lblpage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblpage.Location = new System.Drawing.Point(758, 0);
             this.lblpage.Name = "lblpage";
-            this.lblpage.Size = new System.Drawing.Size(165, 74);
+            this.lblpage.Size = new System.Drawing.Size(110, 48);
             this.lblpage.TabIndex = 4;
             this.lblpage.Text = "Home";
             this.lblpage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,10 +85,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 40);
+            this.label1.Size = new System.Drawing.Size(123, 27);
             this.label1.TabIndex = 3;
             this.label1.Text = "Inventario ";
             // 
@@ -98,10 +95,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(4, 53);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(3, 34);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(149, 5);
+            this.panel3.Size = new System.Drawing.Size(99, 3);
             this.panel3.TabIndex = 2;
             // 
             // panel2
@@ -110,9 +106,10 @@
             this.panel2.Controls.Add(this.btnProducts);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 74);
+            this.panel2.Location = new System.Drawing.Point(0, 48);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(81, 730);
+            this.panel2.Size = new System.Drawing.Size(54, 464);
             this.panel2.TabIndex = 40;
             // 
             // btnProducts
@@ -121,12 +118,11 @@
             this.btnProducts.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.Image = ((System.Drawing.Image)(resources.GetObject("btnProducts.Image")));
             this.btnProducts.Location = new System.Drawing.Point(0, 0);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(81, 75);
+            this.btnProducts.Size = new System.Drawing.Size(54, 49);
             this.btnProducts.TabIndex = 4;
             this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -137,24 +133,26 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::inventario.Properties.Resources.fondo3;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 74);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1221, 730);
+            this.pictureBox1.Size = new System.Drawing.Size(814, 464);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
             // 
             // page1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1302, 804);
+            this.ClientSize = new System.Drawing.Size(868, 512);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "page1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventario";
