@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace inventario
 {
@@ -97,27 +98,54 @@ namespace inventario
         private void btnregistrar_Click(object sender, EventArgs e)
         {
             string correo = txtcorreo.Text;
-            string username = txtruser.Text;
-            string password = txtrpass.Text;
-            string confirmPassword = txtrpass2.Text;
+string username = txtruser.Text;
+string password = txtrpass.Text;
+string confirmPassword = txtrpass2.Text;
 
-            if (password != confirmPassword)
-            {
-                MessageBox.Show("Las contraseñas no coinciden.");
-                return;
-            }
+if (password != confirmPassword)
+{
+    MessageBox.Show("Las contraseñas no coinciden.");
+    return;
+}
 
-            if (!IsValidEmail(correo))
-            {
-                MessageBox.Show("Por favor, ingrese un correo electrónico válido.");
-                return;
-            }
+if (!IsValidEmail(correo))
+{
+    MessageBox.Show("Por favor, ingrese un correo electrónico válido.");
+    return;
+}
 
-            MessageBox.Show("Usuario registrado con éxito.");
-            Form Form1 = new Form1();
-            Form1.Show();
-            this.Hide();
+MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=1234");
+try
+{
+    con.Open();
+    string checkUserQuery = "SELECT COUNT(*) FROM users WHERE user=@username";
+    MySqlCommand checkUserCommand = new MySqlCommand(checkUserQuery, con);
+    checkUserCommand.Parameters.AddWithValue("@username", username);
 
+    int userCount = Convert.ToInt32(checkUserCommand.ExecuteScalar());
+    if (userCount > 0)
+    {
+        MessageBox.Show("El nombre de usuario ya existe. Por favor, elija otro nombre de usuario.");
+    }
+    else
+    {
+        string insertQuery = "INSERT INTO users (user, pass, correo) VALUES (@username, @password, @correo)";
+        MySqlCommand insertCommand = new MySqlCommand(insertQuery, con);
+        insertCommand.Parameters.AddWithValue("@username", username);
+        insertCommand.Parameters.AddWithValue("@password", password);
+        insertCommand.Parameters.AddWithValue("@correo", correo);
+        insertCommand.ExecuteNonQuery();
+
+        MessageBox.Show("Usuario registrado con éxito.");
+        Form Form1 = new Form1();
+        Form1.Show();
+        this.Hide();
+    }
+}
+catch (MySqlException ex)
+{
+    MessageBox.Show("Error: " + ex.Message);
+}
         }
         private bool IsValidEmail(string email)
         {
