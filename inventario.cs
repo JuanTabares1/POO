@@ -44,5 +44,11 @@ namespace inventario
             Form page1 = new page1();
             page1.Show();
         }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            Form agregar = new agregar();
+            agregar.Show();
+        }
     }
 }
