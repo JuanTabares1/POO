@@ -143,6 +143,12 @@
     <Compile Include="registers.Designer.cs">
       <DependentUpon>registers.cs</DependentUpon>
     </Compile>
+    <Compile Include="usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuario.Designer.cs">
+      <DependentUpon>usuario.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="agregar.resx">
       <DependentUpon>agregar.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +176,9 @@
     </Compile>
     <EmbeddedResource Include="registers.resx">
       <DependentUpon>registers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuario.resx">
+      <DependentUpon>usuario.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

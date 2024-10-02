@@ -42,10 +42,9 @@ namespace inventario
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta funcionando", "Funcionando", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            this.Close();
+            Form usuario = new usuario();
+            usuario.Show();
         }
     }
 }
