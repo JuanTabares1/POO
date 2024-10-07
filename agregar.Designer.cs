@@ -50,6 +50,7 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // button2
             // 
@@ -109,6 +110,7 @@
             this.textBoxid.Name = "textBoxid";
             this.textBoxid.Size = new System.Drawing.Size(133, 21);
             this.textBoxid.TabIndex = 6;
+            this.textBoxid.TextChanged += new System.EventHandler(this.textBoxid_TextChanged);
             // 
             // textBoxpro
             // 
@@ -116,6 +118,7 @@
             this.textBoxpro.Name = "textBoxpro";
             this.textBoxpro.Size = new System.Drawing.Size(133, 21);
             this.textBoxpro.TabIndex = 7;
+            this.textBoxpro.TextChanged += new System.EventHandler(this.textBoxpro_TextChanged);
             // 
             // textBoxcant
             // 
@@ -123,6 +126,7 @@
             this.textBoxcant.Name = "textBoxcant";
             this.textBoxcant.Size = new System.Drawing.Size(133, 21);
             this.textBoxcant.TabIndex = 8;
+            this.textBoxcant.TextChanged += new System.EventHandler(this.textBoxcant_TextChanged);
             // 
             // textBoxpre
             // 
@@ -130,6 +134,7 @@
             this.textBoxpre.Name = "textBoxpre";
             this.textBoxpre.Size = new System.Drawing.Size(133, 21);
             this.textBoxpre.TabIndex = 9;
+            this.textBoxpre.TextChanged += new System.EventHandler(this.textBoxpre_TextChanged);
             // 
             // label5
             // 
@@ -162,7 +167,7 @@
             this.Controls.Add(this.btnAdd);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "agregar";
             this.ResumeLayout(false);
             this.PerformLayout();
