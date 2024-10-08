@@ -11,6 +11,8 @@ namespace inventario
         {
             InitializeComponent();
 
+            txtSearch.TextChanged += txtSearch_TextChanged;
+
             gridProducts.AutoGenerateColumns = false;
 
             gridProducts.Columns.Add("id_pro", "ID Producto");
@@ -158,6 +160,42 @@ namespace inventario
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            // Filtrar los datos en el DataGridView según el texto del txtSearch
+            string filter = txtSearch.Text.ToLower();
+            string connectionString = "server=localhost;database=logins;uid=root;pwd=1234;";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    // Consulta SQL para obtener los datos de la tabla 'product'
+                    string query = "SELECT id_pro, producto, cantidad, precio FROM product WHERE LOWER(producto) LIKE @filter";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@filter", "%" + filter + "%");
+
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+
+                            // Asignar el DataTable como fuente de datos del DataGridView
+                            gridProducts.DataSource = dt;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al buscar productos: " + ex.Message);
+                }
+            }
         }
     }
 }
