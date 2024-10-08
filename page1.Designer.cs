@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(page1));
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblpage = new System.Windows.Forms.Label();
+            this.btninicio = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelpadre = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUser = new System.Windows.Forms.PictureBox();
-            this.panelpadre = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -62,7 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkViolet;
-            this.panel1.Controls.Add(this.lblpage);
+            this.panel1.Controls.Add(this.btninicio);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,18 +72,19 @@
             this.panel1.TabIndex = 39;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // lblpage
+            // btninicio
             // 
-            this.lblpage.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpage.ForeColor = System.Drawing.Color.White;
-            this.lblpage.Location = new System.Drawing.Point(1137, 0);
-            this.lblpage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblpage.Name = "lblpage";
-            this.lblpage.Size = new System.Drawing.Size(165, 74);
-            this.lblpage.TabIndex = 4;
-            this.lblpage.Text = "Home";
-            this.lblpage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btninicio.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btninicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninicio.ForeColor = System.Drawing.Color.White;
+            this.btninicio.Location = new System.Drawing.Point(1137, 0);
+            this.btninicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.btninicio.Name = "btninicio";
+            this.btninicio.Size = new System.Drawing.Size(165, 74);
+            this.btninicio.TabIndex = 4;
+            this.btninicio.Text = "Home";
+            this.btninicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
             // 
             // label1
             // 
@@ -119,6 +120,16 @@
             this.panel2.Size = new System.Drawing.Size(81, 714);
             this.panel2.TabIndex = 40;
             // 
+            // panelpadre
+            // 
+            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources.fondo3;
+            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelpadre.Location = new System.Drawing.Point(81, 74);
+            this.panelpadre.Name = "panelpadre";
+            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
+            this.panelpadre.TabIndex = 41;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -142,16 +153,6 @@
             this.btnUser.TabIndex = 39;
             this.btnUser.TabStop = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
-            // 
-            // panelpadre
-            // 
-            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources.fondo3;
-            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelpadre.Location = new System.Drawing.Point(81, 74);
-            this.panelpadre.Name = "panelpadre";
-            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
-            this.panelpadre.TabIndex = 41;
             // 
             // page1
             // 
@@ -179,7 +180,7 @@
         #endregion
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblpage;
+        private System.Windows.Forms.Label btninicio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;

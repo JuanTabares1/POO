@@ -39,16 +39,12 @@ namespace inventario
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form usuario = new usuario();
-            usuario.Show();
+           
         }
 
         private void btnUser_Click_1(object sender, EventArgs e)
         {
-            this.Close();
-            Form usuario = new usuario();
-            usuario.Show();
+            AbrirFormEnPanel(new usuario());
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -78,6 +74,11 @@ namespace inventario
             this.panelpadre.Tag = fh;
             fh.Show();
 
+        }
+
+        private void btninicio_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new inicio());
         }
     }
 }
