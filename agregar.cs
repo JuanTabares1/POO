@@ -39,25 +39,21 @@ namespace inventario
                 {
                     conn.Open();
 
-                    // Consulta SQL de inserción
                     string query = "INSERT INTO product (id_pro, producto, cantidad, precio) VALUES (@id_pro, @producto, @cantidad, @precio)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    {
-                        // Parámetros para evitar inyecciones SQL
+                    { 
                         cmd.Parameters.AddWithValue("@id_pro", textBoxid.Text);
                         cmd.Parameters.AddWithValue("@producto", textBoxpro.Text);
                         cmd.Parameters.AddWithValue("@cantidad", textBoxcant.Text);
                         cmd.Parameters.AddWithValue("@precio", textBoxpre.Text);
 
-                        // Ejecutar el comando
                         int result = cmd.ExecuteNonQuery();
 
-                        // Verificar si la inserción fue exitosa
                         if (result > 0)
                         {
                             MessageBox.Show("Producto agregado correctamente.");
-                           this.Hide();
+                            this.Hide();
                         }
                         else
                         {

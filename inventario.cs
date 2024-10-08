@@ -88,10 +88,9 @@ namespace inventario
                 int cantidad = Convert.ToInt32(gridProducts.SelectedRows[0].Cells["cantidad"].Value);
                 decimal precio = Convert.ToDecimal(gridProducts.SelectedRows[0].Cells["precio"].Value);
 
-                // Abrir el formulario de edición y pasar los datos
                 editar editForm = new editar(id_pro, producto, cantidad, precio);
                 editForm.ShowDialog();
-                LoadDataToGrid(); // Recargar datos después de cerrar el formulario de edición
+                LoadDataToGrid(); 
             }
             else
             {
@@ -183,7 +182,6 @@ namespace inventario
                             DataTable dt = new DataTable();
                             adapter.Fill(dt);
 
-                            // Asignar el DataTable como fuente de datos del DataGridView
                             gridProducts.DataSource = dt;
                         }
                     }
