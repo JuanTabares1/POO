@@ -49,6 +49,9 @@ namespace inventario
                         if (result > 0)
                         {
                             MessageBox.Show("Producto editado correctamente.");
+                            Form inventario = new inventario();
+                            inventario.Show();
+                            this.Hide();
                         }
                         else
                         {
