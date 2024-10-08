@@ -74,6 +74,7 @@
             // 
             // btninicio
             // 
+            this.btninicio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btninicio.Dock = System.Windows.Forms.DockStyle.Right;
             this.btninicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicio.ForeColor = System.Drawing.Color.White;
@@ -132,6 +133,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = global::inventario.Properties.Resources.pngegg;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
@@ -145,6 +147,7 @@
             // btnUser
             // 
             this.btnUser.BackColor = System.Drawing.Color.Transparent;
+            this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.Location = new System.Drawing.Point(0, 72);
             this.btnUser.Name = "btnUser";
