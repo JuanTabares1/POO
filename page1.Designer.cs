@@ -37,12 +37,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUser = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelpadre = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -134,7 +133,7 @@
             // 
             // btnUser
             // 
-            this.btnUser.BackColor = System.Drawing.Color.DarkViolet;
+            this.btnUser.BackColor = System.Drawing.Color.Transparent;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.Location = new System.Drawing.Point(0, 72);
             this.btnUser.Name = "btnUser";
@@ -144,16 +143,15 @@
             this.btnUser.TabStop = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
             // 
-            // pictureBox1
+            // panelpadre
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::inventario.Properties.Resources.fondo3;
-            this.pictureBox1.Location = new System.Drawing.Point(81, 74);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1221, 714);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
+            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources.fondo3;
+            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelpadre.Location = new System.Drawing.Point(81, 74);
+            this.panelpadre.Name = "panelpadre";
+            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
+            this.panelpadre.TabIndex = 41;
             // 
             // page1
             // 
@@ -162,7 +160,7 @@
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1302, 788);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panelpadre);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -174,7 +172,6 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,8 +183,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnUser;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panelpadre;
     }
 }

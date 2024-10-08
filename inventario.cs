@@ -70,16 +70,13 @@ namespace inventario
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form page1 = new page1();
-            page1.Show();
+   
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             Form agregar = new agregar();
             agregar.Show();
-            this.Close();
         }
 
         private void btnEditProduct_Click(object sender, EventArgs e)

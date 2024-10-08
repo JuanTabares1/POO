@@ -29,10 +29,6 @@ namespace inventario
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            Form inventario = new inventario();
-            inventario.Show();
-
-            this.Hide();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -57,10 +53,7 @@ namespace inventario
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form inventario = new inventario();
-            inventario.Show();
-
-            this.Hide();
+            AbrirFormEnPanel(new inventario());
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -73,6 +66,18 @@ namespace inventario
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        private void AbrirFormEnPanel(object formhija)
+        {
+            if (this.panelpadre.Controls.Count > 0)
+                this.panelpadre.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelpadre.Controls.Add(fh);
+            this.panelpadre.Tag = fh;
+            fh.Show();
+
         }
     }
 }
