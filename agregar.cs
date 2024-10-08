@@ -57,6 +57,7 @@ namespace inventario
                         if (result > 0)
                         {
                             MessageBox.Show("Producto agregado correctamente.");
+                            this.Close();
                         }
                         else
                         {
