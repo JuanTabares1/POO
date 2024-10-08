@@ -16,5 +16,12 @@ namespace inventario
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form inventario = new inventario();
+            inventario.Show();
+            this.Close();
+        }
     }
 }

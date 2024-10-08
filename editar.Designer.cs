@@ -49,7 +49,7 @@
             this.label5.Location = new System.Drawing.Point(99, 55);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(201, 24);
+            this.label5.Size = new System.Drawing.Size(139, 16);
             this.label5.TabIndex = 21;
             this.label5.Text = "EDITAR PRODUCTO";
             // 
@@ -57,21 +57,21 @@
             // 
             this.textBoxpre.Location = new System.Drawing.Point(125, 358);
             this.textBoxpre.Name = "textBoxpre";
-            this.textBoxpre.Size = new System.Drawing.Size(133, 30);
+            this.textBoxpre.Size = new System.Drawing.Size(133, 23);
             this.textBoxpre.TabIndex = 20;
             // 
             // textBoxcant
             // 
             this.textBoxcant.Location = new System.Drawing.Point(125, 268);
             this.textBoxcant.Name = "textBoxcant";
-            this.textBoxcant.Size = new System.Drawing.Size(133, 30);
+            this.textBoxcant.Size = new System.Drawing.Size(133, 23);
             this.textBoxcant.TabIndex = 19;
             // 
             // textBoxpro
             // 
             this.textBoxpro.Location = new System.Drawing.Point(125, 177);
             this.textBoxpro.Name = "textBoxpro";
-            this.textBoxpro.Size = new System.Drawing.Size(133, 30);
+            this.textBoxpro.Size = new System.Drawing.Size(133, 23);
             this.textBoxpro.TabIndex = 18;
             // 
             // label4
@@ -82,7 +82,7 @@
             this.label4.Location = new System.Drawing.Point(162, 317);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 24);
+            this.label4.Size = new System.Drawing.Size(52, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "Precio";
             // 
@@ -94,7 +94,7 @@
             this.label3.Location = new System.Drawing.Point(145, 231);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 24);
+            this.label3.Size = new System.Drawing.Size(69, 16);
             this.label3.TabIndex = 15;
             this.label3.Text = "Cantidad";
             // 
@@ -106,7 +106,7 @@
             this.label2.Location = new System.Drawing.Point(145, 135);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 24);
+            this.label2.Size = new System.Drawing.Size(71, 16);
             this.label2.TabIndex = 14;
             this.label2.Text = "Producto";
             // 
@@ -123,6 +123,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnAdd
             // 
@@ -139,7 +140,7 @@
             // 
             // editar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
             this.ClientSize = new System.Drawing.Size(388, 528);
@@ -154,7 +155,7 @@
             this.Controls.Add(this.btnAdd);
             this.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "editar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "editar";

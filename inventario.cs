@@ -72,18 +72,15 @@ namespace inventario
         // Evento que se ejecuta cuando el formulario 'inventario' se carga
         private void inventario_Load(object sender, EventArgs e)
         {
-            // Cargar los datos en el DataGridView al cargar el formulario
             LoadDataToGrid();
         }
 
-        // Evento del botón 'Salir'
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Form MsgBox = new MsgBox();
             MsgBox.Show();
         }
 
-        // Evento del botón 'Regresar'
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -91,7 +88,6 @@ namespace inventario
             page1.Show();
         }
 
-        // Evento del botón 'Agregar Producto' que abre el formulario para agregar productos
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             Form agregar = new agregar();
@@ -99,7 +95,6 @@ namespace inventario
             this.Close();
         }
 
-        // Evento del botón 'Editar Producto' que abre el formulario para editar productos
         private void btnEditProduct_Click(object sender, EventArgs e)
         {
             Form editar = new editar();
@@ -107,15 +102,12 @@ namespace inventario
             this.Close();
         }
 
-        // Evento del botón 'Eliminar Producto'
         private void btnDeleteProduct_Click(object sender, EventArgs e)
         {
             if (gridProducts.SelectedRows.Count > 0)
             {
-                // Obtener el id_pro del producto seleccionado
                 int id_pro = Convert.ToInt32(gridProducts.SelectedRows[0].Cells["id_pro"].Value);
 
-                // Eliminar el producto de la base de datos
                 string connectionString = "server=localhost;database=logins;uid=root;pwd=1234;";
 
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -135,7 +127,7 @@ namespace inventario
                             if (result > 0)
                             {
                                 MessageBox.Show("Producto eliminado correctamente.");
-                                LoadDataToGrid(); // Recargar los datos en el DataGridView
+                                LoadDataToGrid(); 
                             }
                             else
                             {
@@ -155,22 +147,20 @@ namespace inventario
             }
         }
 
-        // Evento del DataGridView cuando se hace clic en una celda
         private void gridProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Aquí puedes manejar los clics en el DataGridView si es necesario
+            
         }
 
-        // Evento del botón iconButton1 (sin funcionalidad específica)
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            // Lógica específica para iconButton1 si la necesitas
+            
         }
 
-        // Evento cuando el bindingSource cambia (sin funcionalidad específica)
+        
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
-            // Lógica específica si cambias el binding source
+            
         }
     }
 }
