@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -55,31 +57,34 @@
             // 
             // textBoxpre
             // 
-            this.textBoxpre.Location = new System.Drawing.Point(125, 358);
+            this.textBoxpre.Location = new System.Drawing.Point(125, 381);
             this.textBoxpre.Name = "textBoxpre";
             this.textBoxpre.Size = new System.Drawing.Size(133, 23);
             this.textBoxpre.TabIndex = 20;
+            this.textBoxpre.TextChanged += new System.EventHandler(this.textBoxpre_TextChanged);
             // 
             // textBoxcant
             // 
-            this.textBoxcant.Location = new System.Drawing.Point(125, 268);
+            this.textBoxcant.Location = new System.Drawing.Point(125, 315);
             this.textBoxcant.Name = "textBoxcant";
             this.textBoxcant.Size = new System.Drawing.Size(133, 23);
             this.textBoxcant.TabIndex = 19;
+            this.textBoxcant.TextChanged += new System.EventHandler(this.textBoxcant_TextChanged);
             // 
             // textBoxpro
             // 
-            this.textBoxpro.Location = new System.Drawing.Point(125, 177);
+            this.textBoxpro.Location = new System.Drawing.Point(125, 239);
             this.textBoxpro.Name = "textBoxpro";
             this.textBoxpro.Size = new System.Drawing.Size(133, 23);
             this.textBoxpro.TabIndex = 18;
+            this.textBoxpro.TextChanged += new System.EventHandler(this.textBoxpro_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(162, 317);
+            this.label4.Location = new System.Drawing.Point(164, 362);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 16);
@@ -91,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(145, 231);
+            this.label3.Location = new System.Drawing.Point(164, 296);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 16);
@@ -103,7 +108,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(145, 135);
+            this.label2.Location = new System.Drawing.Point(162, 220);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 16);
@@ -135,8 +140,29 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 35);
             this.btnAdd.TabIndex = 11;
-            this.btnAdd.Text = "Agregar";
+            this.btnAdd.Text = "Aceptar";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(125, 178);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(133, 23);
+            this.textBox1.TabIndex = 22;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(178, 159);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(20, 16);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Id";
             // 
             // editar
             // 
@@ -144,6 +170,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
             this.ClientSize = new System.Drawing.Size(388, 528);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxpre);
             this.Controls.Add(this.textBoxcant);
@@ -175,5 +203,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
