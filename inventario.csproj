@@ -158,6 +158,9 @@
     <EmbeddedResource Include="agregar.resx">
       <DependentUpon>agregar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="editar.resx">
+      <DependentUpon>editar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngegg.png" />
+    <None Include="Resources\pngegg %281%29.png" />
     <Content Include="Resources\usuario %281%29.png" />
     <Content Include="Resources\usuario %282%29.png" />
     <Content Include="Resources\usuario.png" />
