@@ -40,10 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.gridProducts = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRODUCTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CANTIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PRECIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).BeginInit();
@@ -60,13 +56,13 @@
             this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteProduct.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteProduct.Location = new System.Drawing.Point(968, 440);
-            this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(645, 286);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(124, 46);
+            this.btnDeleteProduct.Size = new System.Drawing.Size(83, 30);
             this.btnDeleteProduct.TabIndex = 9;
             this.btnDeleteProduct.Text = "Eliminar";
             this.btnDeleteProduct.UseVisualStyleBackColor = false;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
             // btnEditProduct
             // 
@@ -78,13 +74,13 @@
             this.btnEditProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditProduct.ForeColor = System.Drawing.Color.White;
-            this.btnEditProduct.Location = new System.Drawing.Point(968, 362);
-            this.btnEditProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEditProduct.Location = new System.Drawing.Point(645, 235);
             this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(124, 46);
+            this.btnEditProduct.Size = new System.Drawing.Size(83, 30);
             this.btnEditProduct.TabIndex = 10;
             this.btnEditProduct.Text = "Editar";
             this.btnEditProduct.UseVisualStyleBackColor = false;
+            this.btnEditProduct.Click += new System.EventHandler(this.btnEditProduct_Click);
             // 
             // btnAddProduct
             // 
@@ -96,10 +92,9 @@
             this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProduct.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.Location = new System.Drawing.Point(968, 288);
-            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddProduct.Location = new System.Drawing.Point(645, 187);
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(124, 46);
+            this.btnAddProduct.Size = new System.Drawing.Size(83, 30);
             this.btnAddProduct.TabIndex = 11;
             this.btnAddProduct.Text = "Agregar";
             this.btnAddProduct.UseVisualStyleBackColor = false;
@@ -113,11 +108,10 @@
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(86, 148);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearch.Location = new System.Drawing.Point(57, 96);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(745, 48);
+            this.txtSearch.Size = new System.Drawing.Size(497, 31);
             this.txtSearch.TabIndex = 7;
             // 
             // label1
@@ -126,10 +120,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(424, 68);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(283, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 29);
+            this.label1.Size = new System.Drawing.Size(166, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Buscar un producto";
             // 
@@ -137,10 +130,9 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.DarkViolet;
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(1122, 3);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSalir.Location = new System.Drawing.Point(748, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(51, 52);
+            this.btnSalir.Size = new System.Drawing.Size(34, 34);
             this.btnSalir.TabIndex = 13;
             this.btnSalir.Text = "X";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -174,11 +166,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
             this.gridProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.PRODUCTO,
-            this.CANTIDAD,
-            this.PRECIO});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -189,8 +176,7 @@
             this.gridProducts.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridProducts.EnableHeadersVisualStyles = false;
             this.gridProducts.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.gridProducts.Location = new System.Drawing.Point(38, 262);
-            this.gridProducts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridProducts.Location = new System.Drawing.Point(25, 170);
             this.gridProducts.MultiSelect = false;
             this.gridProducts.Name = "gridProducts";
             this.gridProducts.ReadOnly = true;
@@ -209,44 +195,9 @@
             this.gridProducts.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gridProducts.RowTemplate.Height = 25;
             this.gridProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProducts.Size = new System.Drawing.Size(897, 465);
+            this.gridProducts.Size = new System.Drawing.Size(598, 302);
             this.gridProducts.TabIndex = 14;
-            // 
-            // ID
-            // 
-            this.ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 8;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // PRODUCTO
-            // 
-            this.PRODUCTO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PRODUCTO.HeaderText = "PRODUCTO";
-            this.PRODUCTO.MinimumWidth = 8;
-            this.PRODUCTO.Name = "PRODUCTO";
-            this.PRODUCTO.ReadOnly = true;
-            this.PRODUCTO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // CANTIDAD
-            // 
-            this.CANTIDAD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CANTIDAD.HeaderText = "CANTIDAD";
-            this.CANTIDAD.MinimumWidth = 8;
-            this.CANTIDAD.Name = "CANTIDAD";
-            this.CANTIDAD.ReadOnly = true;
-            this.CANTIDAD.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // PRECIO
-            // 
-            this.PRECIO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PRECIO.HeaderText = "PRECIO";
-            this.PRECIO.MinimumWidth = 8;
-            this.PRECIO.Name = "PRECIO";
-            this.PRECIO.ReadOnly = true;
-            this.PRECIO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProducts_CellContentClick);
             // 
             // btnRegresar
             // 
@@ -258,10 +209,9 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(968, 680);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRegresar.Location = new System.Drawing.Point(645, 442);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(124, 46);
+            this.btnRegresar.Size = new System.Drawing.Size(83, 30);
             this.btnRegresar.TabIndex = 15;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -271,19 +221,20 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::inventario.Properties.Resources.pngegg__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(838, 148);
+            this.pictureBox1.Location = new System.Drawing.Point(559, 96);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(31, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // inventario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkViolet;
-            this.ClientSize = new System.Drawing.Size(1178, 788);
+            this.ClientSize = new System.Drawing.Size(785, 512);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.gridProducts);
@@ -294,6 +245,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "inventario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inventario";
@@ -367,10 +319,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn paddingDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imeModeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView gridProducts;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRODUCTO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CANTIDAD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PRECIO;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
