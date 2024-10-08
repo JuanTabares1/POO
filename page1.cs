@@ -46,5 +46,20 @@ namespace inventario
             Form usuario = new usuario();
             usuario.Show();
         }
+
+        private void btnUser_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Form usuario = new usuario();
+            usuario.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form inventario = new inventario();
+            inventario.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -49,6 +49,7 @@ namespace inventario
         {
             Form agregar = new agregar();
             agregar.Show();
+            this.Close();
         }
     }
 }

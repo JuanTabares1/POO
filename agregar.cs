@@ -25,7 +25,9 @@ namespace inventario
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form inventario = new inventario();
+            inventario.Show();
+            this.Hide();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -57,7 +59,9 @@ namespace inventario
                         if (result > 0)
                         {
                             MessageBox.Show("Producto agregado correctamente.");
-                            this.Close();
+                            Form inventario = new inventario();
+                            inventario.Show();
+                            this.Hide();
                         }
                         else
                         {
@@ -88,6 +92,11 @@ namespace inventario
         }
 
         private void textBoxpre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void agregar_Load(object sender, EventArgs e)
         {
 
         }
