@@ -48,7 +48,7 @@
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
             this.btnCerrar.Location = new System.Drawing.Point(0, 634);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -149,7 +149,7 @@
             // 
             // panelpadre
             // 
-            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources.fondo3;
+            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources._81_811946_fondos_de_pantalla_para_pc_8k;
             this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelpadre.Location = new System.Drawing.Point(81, 74);
