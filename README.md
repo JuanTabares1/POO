@@ -22,3 +22,5 @@ La base de datos usada es MySql:
   cantidad int NOT NULL,
   precio int NOT NULL
   )
+
+  https://tse2.mm.bing.net/th?id=OIP.Le9R6zRgeOCZ4AW8tNJDwAHaEK&pid=Api&P=0&h=180
