@@ -35,9 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panelpadre = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUser = new System.Windows.Forms.PictureBox();
+            this.panelpadre = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -48,7 +48,7 @@
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
             this.btnCerrar.Location = new System.Drawing.Point(0, 634);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -61,7 +61,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkViolet;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.panel1.Controls.Add(this.btninicio);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel3);
@@ -111,7 +111,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkViolet;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnUser);
             this.panel2.Controls.Add(this.btnCerrar);
@@ -120,16 +120,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(81, 714);
             this.panel2.TabIndex = 40;
-            // 
-            // panelpadre
-            // 
-            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources.fondo3;
-            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelpadre.Location = new System.Drawing.Point(81, 74);
-            this.panelpadre.Name = "panelpadre";
-            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
-            this.panelpadre.TabIndex = 41;
             // 
             // pictureBox2
             // 
@@ -156,6 +146,16 @@
             this.btnUser.TabIndex = 39;
             this.btnUser.TabStop = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
+            // 
+            // panelpadre
+            // 
+            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources._81_811946_fondos_de_pantalla_para_pc_8k;
+            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelpadre.Location = new System.Drawing.Point(81, 74);
+            this.panelpadre.Name = "panelpadre";
+            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
+            this.panelpadre.TabIndex = 41;
             // 
             // page1
             // 
