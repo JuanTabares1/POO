@@ -57,7 +57,7 @@
             // 
             // textBoxpre
             // 
-            this.textBoxpre.Location = new System.Drawing.Point(125, 381);
+            this.textBoxpre.Location = new System.Drawing.Point(125, 370);
             this.textBoxpre.Name = "textBoxpre";
             this.textBoxpre.Size = new System.Drawing.Size(133, 30);
             this.textBoxpre.TabIndex = 20;
@@ -65,7 +65,7 @@
             // 
             // textBoxcant
             // 
-            this.textBoxcant.Location = new System.Drawing.Point(125, 315);
+            this.textBoxcant.Location = new System.Drawing.Point(125, 297);
             this.textBoxcant.Name = "textBoxcant";
             this.textBoxcant.Size = new System.Drawing.Size(133, 30);
             this.textBoxcant.TabIndex = 19;
@@ -73,7 +73,7 @@
             // 
             // textBoxpro
             // 
-            this.textBoxpro.Location = new System.Drawing.Point(125, 239);
+            this.textBoxpro.Location = new System.Drawing.Point(125, 222);
             this.textBoxpro.Name = "textBoxpro";
             this.textBoxpro.Size = new System.Drawing.Size(133, 30);
             this.textBoxpro.TabIndex = 18;
@@ -84,7 +84,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(163, 354);
+            this.label4.Location = new System.Drawing.Point(159, 343);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 24);
@@ -96,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(152, 288);
+            this.label3.Location = new System.Drawing.Point(149, 270);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 24);
@@ -108,7 +108,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(149, 212);
+            this.label2.Location = new System.Drawing.Point(149, 195);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 24);
@@ -117,11 +117,11 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumOrchid;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(259, 444);
+            this.button2.Location = new System.Drawing.Point(250, 434);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 35);
@@ -132,10 +132,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.MediumOrchid;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(43, 444);
+            this.btnAdd.Location = new System.Drawing.Point(43, 434);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 35);
@@ -146,7 +146,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 165);
+            this.textBox1.Location = new System.Drawing.Point(125, 145);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(133, 30);
             this.textBox1.TabIndex = 22;
@@ -157,7 +157,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(178, 138);
+            this.label1.Location = new System.Drawing.Point(180, 118);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 24);
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(388, 528);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);

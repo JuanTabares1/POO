@@ -43,10 +43,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.MediumOrchid;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(50, 437);
+            this.btnAdd.Location = new System.Drawing.Point(50, 424);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 35);
@@ -57,11 +57,11 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumOrchid;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(266, 437);
+            this.button2.Location = new System.Drawing.Point(266, 424);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 35);
@@ -75,10 +75,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(191, 129);
+            this.label1.Location = new System.Drawing.Point(185, 105);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 16);
+            this.label1.Size = new System.Drawing.Size(29, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "ID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -88,10 +88,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(155, 196);
+            this.label2.Location = new System.Drawing.Point(152, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 16);
+            this.label2.Size = new System.Drawing.Size(97, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Producto";
             // 
@@ -103,7 +103,7 @@
             this.label3.Location = new System.Drawing.Point(155, 270);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
+            this.label3.Size = new System.Drawing.Size(94, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Cantidad";
             // 
@@ -115,15 +115,15 @@
             this.label4.Location = new System.Drawing.Point(167, 339);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 16);
+            this.label4.Size = new System.Drawing.Size(70, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "Precio";
             // 
             // textBoxid
             // 
-            this.textBoxid.Location = new System.Drawing.Point(136, 156);
+            this.textBoxid.Location = new System.Drawing.Point(136, 144);
             this.textBoxid.Name = "textBoxid";
-            this.textBoxid.Size = new System.Drawing.Size(133, 21);
+            this.textBoxid.Size = new System.Drawing.Size(133, 28);
             this.textBoxid.TabIndex = 6;
             this.textBoxid.TextChanged += new System.EventHandler(this.textBoxid_TextChanged);
             // 
@@ -131,7 +131,7 @@
             // 
             this.textBoxpro.Location = new System.Drawing.Point(136, 223);
             this.textBoxpro.Name = "textBoxpro";
-            this.textBoxpro.Size = new System.Drawing.Size(133, 21);
+            this.textBoxpro.Size = new System.Drawing.Size(133, 28);
             this.textBoxpro.TabIndex = 7;
             this.textBoxpro.TextChanged += new System.EventHandler(this.textBoxpro_TextChanged);
             // 
@@ -139,7 +139,7 @@
             // 
             this.textBoxcant.Location = new System.Drawing.Point(136, 297);
             this.textBoxcant.Name = "textBoxcant";
-            this.textBoxcant.Size = new System.Drawing.Size(133, 21);
+            this.textBoxcant.Size = new System.Drawing.Size(133, 28);
             this.textBoxcant.TabIndex = 8;
             this.textBoxcant.TextChanged += new System.EventHandler(this.textBoxcant_TextChanged);
             // 
@@ -147,7 +147,7 @@
             // 
             this.textBoxpre.Location = new System.Drawing.Point(136, 366);
             this.textBoxpre.Name = "textBoxpre";
-            this.textBoxpre.Size = new System.Drawing.Size(133, 21);
+            this.textBoxpre.Size = new System.Drawing.Size(133, 28);
             this.textBoxpre.TabIndex = 9;
             this.textBoxpre.TextChanged += new System.EventHandler(this.textBoxpre_TextChanged);
             // 
@@ -158,18 +158,18 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(132, 69);
+            this.label5.Location = new System.Drawing.Point(75, 51);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 16);
+            this.label5.Size = new System.Drawing.Size(229, 24);
             this.label5.TabIndex = 10;
             this.label5.Text = "AGREGAR PRODUCTO";
             // 
             // agregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkViolet;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(395, 500);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxpre);
