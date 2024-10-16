@@ -2,6 +2,7 @@
 
 Restaurar los paquetes de NuGet sugeridos:
   -FontAwesome.Sharp
+  -MySql.Data
 
 
 La base de datos usada es MySql: 
