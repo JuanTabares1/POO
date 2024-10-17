@@ -29,5 +29,10 @@ namespace inventario
             Form page1 = new page1();
             page1.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

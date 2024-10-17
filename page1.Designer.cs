@@ -35,11 +35,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panelpadre = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUser = new System.Windows.Forms.PictureBox();
-            this.panelpadre = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +114,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnUser);
             this.panel2.Controls.Add(this.btnCerrar);
@@ -120,6 +123,27 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(81, 714);
             this.panel2.TabIndex = 40;
+            // 
+            // panelpadre
+            // 
+            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources._81_811946_fondos_de_pantalla_para_pc_8k;
+            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelpadre.Location = new System.Drawing.Point(81, 74);
+            this.panelpadre.Name = "panelpadre";
+            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
+            this.panelpadre.TabIndex = 41;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = global::inventario.Properties.Resources._2906274;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(81, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -139,23 +163,13 @@
             this.btnUser.BackColor = System.Drawing.Color.Transparent;
             this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.Location = new System.Drawing.Point(0, 72);
+            this.btnUser.Location = new System.Drawing.Point(0, 124);
             this.btnUser.Name = "btnUser";
             this.btnUser.Size = new System.Drawing.Size(81, 54);
             this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnUser.TabIndex = 39;
             this.btnUser.TabStop = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
-            // 
-            // panelpadre
-            // 
-            this.panelpadre.BackgroundImage = global::inventario.Properties.Resources._81_811946_fondos_de_pantalla_para_pc_8k;
-            this.panelpadre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelpadre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelpadre.Location = new System.Drawing.Point(81, 74);
-            this.panelpadre.Name = "panelpadre";
-            this.panelpadre.Size = new System.Drawing.Size(1221, 714);
-            this.panelpadre.TabIndex = 41;
             // 
             // page1
             // 
@@ -174,6 +188,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
             this.ResumeLayout(false);
@@ -190,5 +205,6 @@
         private System.Windows.Forms.PictureBox btnUser;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelpadre;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

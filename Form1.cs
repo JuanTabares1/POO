@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -74,43 +75,45 @@ namespace inventario
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
-        {
-            string username = txtuser.Text;
-            string pass = txtpass.Text;
-            MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=1234");
-            try
-            {
-                con.Open();
-            }
-            catch (MySqlException ex) { MessageBox.Show("Error " + ex.ToString()); }
-            String sql = "select user,pass from users where user ='" + username + "' AND pass ='" + pass + "'";
-            MySqlCommand comando = new MySqlCommand(sql, con);
-            comando.Parameters.AddWithValue("@username", username);
-            comando.Parameters.AddWithValue("@password", pass);
-            MySqlDataReader read = comando.ExecuteReader();
-            if (read.Read())
-            {
-                Form page1 = new page1();
-                page1.Show();
+        { 
+                    string username = txtuser.Text;
+                    string pass = txtpass.Text;
+                    MySqlConnection con = new MySqlConnection("server = 127.0.0.1; Database=logins; User Id = root; password=1234");
+                    try
+                    {
+                        con.Open();
+                    }
+                    catch (MySqlException ex) { MessageBox.Show("Error " + ex.ToString()); }
+                    String sql = "select user,pass from users where user ='" + username + "' AND pass ='" + pass + "'";
+                    MySqlCommand comando = new MySqlCommand(sql, con);
+                    comando.Parameters.AddWithValue("@username", username);
+                    comando.Parameters.AddWithValue("@password", pass);
+                    MySqlDataReader read = comando.ExecuteReader();
+                    if (read.Read())
+                    {
+               
+                    Form page1 = new page1();
+                    page1.Show();
 
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Nombre de usuario o contraseña incorrectos.");
-            }
+                    this.Hide();
+                    
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nombre de usuario o contraseña incorrectos.");
+                    }
 
-            if (txtuser.Text != "USUARIO")
-            {
-                if (txtpass.Text != "CONTRASEÑA")
-                {
+                    if (txtuser.Text != "USUARIO")
+                    {
+                        if (txtpass.Text != "CONTRASEÑA")
+                        {
+                        }
+                        else msgError("Porfavor ingrese la contraseña");
+                    }
+                    else msgError("Porfavor ingrese el usuario");
                 }
-                else msgError("Porfavor ingrese la contraseña");
-            }
-            else msgError("Porfavor ingrese el usuario");
-        }
+            
         
-
         private void btnregistrarse_Click(object sender, EventArgs e)
         {
             Form registers = new registers();

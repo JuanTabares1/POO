@@ -73,6 +73,16 @@ namespace inventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2906274 {
+            get {
+                object obj = ResourceManager.GetObject("2906274", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _81_811946_fondos_de_pantalla_para_pc_8k {
             get {
                 object obj = ResourceManager.GetObject("81-811946_fondos-de-pantalla-para-pc-8k", resourceCulture);
@@ -106,6 +116,16 @@ namespace inventario.Properties {
         internal static System.Drawing.Bitmap pngegg__1_ {
             get {
                 object obj = ResourceManager.GetObject("pngegg (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R {
+            get {
+                object obj = ResourceManager.GetObject("R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

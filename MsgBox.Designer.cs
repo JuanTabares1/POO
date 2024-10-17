@@ -56,7 +56,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(233, 82);
+            this.button2.Location = new System.Drawing.Point(176, 82);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
             this.button2.TabIndex = 2;
@@ -67,11 +67,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 35);
+            this.label1.Location = new System.Drawing.Point(0, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 22);
+            this.label1.Size = new System.Drawing.Size(325, 22);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Estas apunto de salir..        ¿quieres salir?";
+            this.label1.Text = "Estas apunto de salir..    ¿quieres salir?";
             // 
             // panel1
             // 
@@ -79,7 +79,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(345, 32);
+            this.panel1.Size = new System.Drawing.Size(298, 32);
             this.panel1.TabIndex = 4;
             // 
             // MsgBox
@@ -87,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(345, 140);
+            this.ClientSize = new System.Drawing.Size(298, 140);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
