@@ -90,8 +90,7 @@ namespace inventario
                     comando.Parameters.AddWithValue("@password", pass);
                     MySqlDataReader read = comando.ExecuteReader();
                     if (read.Read())
-                    {
-               
+                    {           
                     Form page1 = new page1();
                     page1.Show();
 
