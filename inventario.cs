@@ -160,7 +160,6 @@ namespace inventario
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            // Filtrar los datos en el DataGridView según el texto del txtSearch
             string filter = txtSearch.Text.ToLower();
             string connectionString = "server=localhost;database=logins;uid=root;pwd=1234;";
 
@@ -170,7 +169,6 @@ namespace inventario
                 {
                     conn.Open();
 
-                    // Consulta SQL para obtener los datos de la tabla 'product'
                     string query = "SELECT id_pro, producto, cantidad, precio FROM product WHERE LOWER(producto) LIKE @filter";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))

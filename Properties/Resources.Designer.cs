@@ -83,6 +83,16 @@ namespace inventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3301793f04334afbd270693ae85dd0dc {
+            get {
+                object obj = ResourceManager.GetObject("3301793f04334afbd270693ae85dd0dc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _81_811946_fondos_de_pantalla_para_pc_8k {
             get {
                 object obj = ResourceManager.GetObject("81-811946_fondos-de-pantalla-para-pc-8k", resourceCulture);

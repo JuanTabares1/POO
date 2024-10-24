@@ -176,5 +176,10 @@ namespace inventario
                 Form Form1 = new Form1();
                 Form1.Show();
             }
+
+        private void txtcorreo_TextChanged(object sender, EventArgs e)
+        {
+
         }
+    }
     }

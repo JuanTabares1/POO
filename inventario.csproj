@@ -111,6 +111,12 @@
     <Compile Include="agregar.Designer.cs">
       <DependentUpon>agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="carrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carrito.Designer.cs">
+      <DependentUpon>carrito.cs</DependentUpon>
+    </Compile>
     <Compile Include="editar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,8 +167,17 @@
     <Compile Include="usuario.Designer.cs">
       <DependentUpon>usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventas.Designer.cs">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="agregar.resx">
       <DependentUpon>agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carrito.resx">
+      <DependentUpon>carrito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editar.resx">
       <DependentUpon>editar.cs</DependentUpon>
@@ -198,6 +213,9 @@
     <EmbeddedResource Include="usuario.resx">
       <DependentUpon>usuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ventas.resx">
+      <DependentUpon>ventas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -220,6 +238,7 @@
     <None Include="Resources\pngegg %281%29.png" />
     <None Include="Resources\2906274.png" />
     <None Include="Resources\R.png" />
+    <None Include="Resources\3301793f04334afbd270693ae85dd0dc.png" />
     <Content Include="Resources\usuario %281%29.png" />
     <Content Include="Resources\usuario %282%29.png" />
     <Content Include="Resources\usuario.png" />

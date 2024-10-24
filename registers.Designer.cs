@@ -171,6 +171,7 @@
             this.txtcorreo.TabIndex = 24;
             this.txtcorreo.Text = "CORREO";
             this.txtcorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcorreo.TextChanged += new System.EventHandler(this.txtcorreo_TextChanged);
             this.txtcorreo.Enter += new System.EventHandler(this.txtcorreo_Enter);
             this.txtcorreo.Leave += new System.EventHandler(this.txtcorreo_Leave);
             // 
@@ -246,7 +247,6 @@
             this.Controls.Add(this.txtrpass2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtrpass);
             this.Controls.Add(this.txtruser);
             this.Controls.Add(this.label2);
@@ -254,6 +254,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnregresar);
             this.Controls.Add(this.btnregistrar);
+            this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "registers";
             this.Opacity = 0.9D;
