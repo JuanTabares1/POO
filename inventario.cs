@@ -30,17 +30,17 @@ namespace inventario
 
         private void LoadDataToGrid()
         {
-            string connectionString = "server=localhost;database=logins;uid=root;pwd=1234;";
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection con = new MySqlConnection(connectionString))
             {
                 try
                 {
-                    conn.Open();
+                    con.Open();
 
                     string query = "SELECT id_pro, producto, cantidad, precio FROM product";
 
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
                         {
