@@ -34,8 +34,6 @@
             this.txtrpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_guardar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +54,7 @@
             this.txtreuser.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtreuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtreuser.ForeColor = System.Drawing.Color.White;
-            this.txtreuser.Location = new System.Drawing.Point(196, 242);
+            this.txtreuser.Location = new System.Drawing.Point(192, 194);
             this.txtreuser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtreuser.Name = "txtreuser";
             this.txtreuser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -71,7 +69,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(277, 254);
+            this.label3.Location = new System.Drawing.Point(277, 216);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(217, 15);
@@ -85,7 +83,7 @@
             this.txtrpass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtrpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtrpass.ForeColor = System.Drawing.Color.White;
-            this.txtrpass.Location = new System.Drawing.Point(161, 292);
+            this.txtrpass.Location = new System.Drawing.Point(161, 257);
             this.txtrpass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtrpass.Name = "txtrpass";
             this.txtrpass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -100,7 +98,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(268, 303);
+            this.label1.Location = new System.Drawing.Point(268, 279);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(217, 15);
@@ -121,34 +119,6 @@
             this.btn_guardar.UseVisualStyleBackColor = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(277, 200);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(217, 15);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "______________________________";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(186, 189);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox1.Size = new System.Drawing.Size(382, 17);
-            this.textBox1.TabIndex = 37;
-            this.textBox1.Text = "ID";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // usuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -156,8 +126,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(909, 486);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.txtrpass);
             this.Controls.Add(this.txtreuser);
@@ -182,7 +150,5 @@
         private System.Windows.Forms.TextBox txtrpass;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_guardar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

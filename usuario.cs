@@ -67,12 +67,11 @@ namespace inventario
                 try
                 {
                     con.Open();
-                    string query = "UPDATE users SET user = @user, pass = @pass WHERE id = @id";
+                    string query = "UPDATE users SET pass = @pass WHERE user = @user";
                     using (MySqlCommand cmd = new MySqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue("@user", txtreuser.Text);
                         cmd.Parameters.AddWithValue("@pass", txtrpass.Text);
-                        cmd.Parameters.AddWithValue("@id", textBox1.Text);
 
                         int filasAfectadas = cmd.ExecuteNonQuery();
 
@@ -82,7 +81,7 @@ namespace inventario
                         }
                         else
                         {
-                            Console.WriteLine("No se encontró el usuario con el ID proporcionado.");
+                            Console.WriteLine("No se encontró el usuario con el Nombre proporcionado.");
                         }
                     }
                 }
