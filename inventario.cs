@@ -161,7 +161,7 @@ namespace inventario
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string filter = txtSearch.Text.ToLower();
-            string connectionString = "server=localhost;database=logins;uid=root;pwd=1234;";
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {

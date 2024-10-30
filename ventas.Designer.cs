@@ -97,7 +97,6 @@
             this.gridProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridProducts.Size = new System.Drawing.Size(601, 302);
             this.gridProducts.TabIndex = 15;
-            this.gridProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridProducts_Load);
             // 
             // btncomprar
             // 
