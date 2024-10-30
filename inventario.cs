@@ -28,7 +28,7 @@ namespace inventario
             gridProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void LoadDataToGrid()
+        public void LoadDataToGrid()
         {
             string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
 

@@ -10,11 +10,10 @@ namespace inventario
         public ventas()
         {
             InitializeComponent();
-            this.Load += ventas_Load;  // Vincular el evento Load del formulario
-            ConfigurarGrid();           // Configurar el DataGridView
+            this.Load += ventas_Load;  
+            ConfigurarGrid();          
         }
 
-        // Método para configurar el DataGridView
         private void ConfigurarGrid()
         {
             gridProducts.AutoGenerateColumns = false;
