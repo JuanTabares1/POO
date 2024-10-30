@@ -17,27 +17,6 @@ namespace inventario
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form MsgBox = new MsgBox();
-            MsgBox.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-           
-        }
-
         private void txtreuser_Enter(object sender, EventArgs e)
         {
             if (txtreuser.Text == "CAMBIAR NOMBRE DE USUARIO")
