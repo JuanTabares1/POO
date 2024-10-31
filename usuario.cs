@@ -85,9 +85,9 @@ namespace inventario
                         }
                     }
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    Console.WriteLine("Ocurrio un error: " + ex.Message);
+                    MessageBox.Show("Error: " + ex.Message);
                 }
             }
         }

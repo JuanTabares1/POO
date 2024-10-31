@@ -58,7 +58,7 @@
             this.txtreuser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtreuser.Name = "txtreuser";
             this.txtreuser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtreuser.Size = new System.Drawing.Size(382, 17);
+            this.txtreuser.Size = new System.Drawing.Size(382, 25);
             this.txtreuser.TabIndex = 25;
             this.txtreuser.Text = "CAMBIAR NOMBRE DE USUARIO";
             this.txtreuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -72,7 +72,7 @@
             this.label3.Location = new System.Drawing.Point(277, 216);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 15);
+            this.label3.Size = new System.Drawing.Size(310, 22);
             this.label3.TabIndex = 32;
             this.label3.Text = "______________________________";
             // 
@@ -87,7 +87,7 @@
             this.txtrpass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtrpass.Name = "txtrpass";
             this.txtrpass.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtrpass.Size = new System.Drawing.Size(429, 17);
+            this.txtrpass.Size = new System.Drawing.Size(429, 25);
             this.txtrpass.TabIndex = 33;
             this.txtrpass.Text = "CAMBIAR CONTRASEÑA";
             this.txtrpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -101,7 +101,7 @@
             this.label1.Location = new System.Drawing.Point(268, 279);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 15);
+            this.label1.Size = new System.Drawing.Size(310, 22);
             this.label1.TabIndex = 34;
             this.label1.Text = "______________________________";
             // 
@@ -121,7 +121,7 @@
             // 
             // usuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(909, 486);

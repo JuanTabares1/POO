@@ -153,6 +153,12 @@
     <Compile Include="page1.Designer.cs">
       <DependentUpon>page1.cs</DependentUpon>
     </Compile>
+    <Compile Include="pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pago.Designer.cs">
+      <DependentUpon>pago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registers.cs">
@@ -197,6 +203,9 @@
     <EmbeddedResource Include="page1.resx">
       <DependentUpon>page1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pago.resx">
+      <DependentUpon>pago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -239,6 +248,7 @@
     <None Include="Resources\2906274.png" />
     <None Include="Resources\R.png" />
     <None Include="Resources\3301793f04334afbd270693ae85dd0dc.png" />
+    <None Include="Resources\Default_A_stylized_logo_for_Game_Store_a_fusion_of_modern_gami_1_d832442e-1296-4ba8-8fba-a160bd71a3d3_0.png" />
     <Content Include="Resources\usuario %281%29.png" />
     <Content Include="Resources\usuario %282%29.png" />
     <Content Include="Resources\usuario.png" />

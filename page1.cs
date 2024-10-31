@@ -85,5 +85,10 @@ namespace inventario
         {
             AbrirFormEnPanel(new ventas());
         }
+
+        private void btncarrito_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new carrito());
+        }
     }
 }

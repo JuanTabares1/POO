@@ -103,6 +103,17 @@ namespace inventario.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Default_A_stylized_logo_for_Game_Store_a_fusion_of_modern_gami_1_d832442e_1296_4ba8_8fba_a160bd71a3d3_0 {
+            get {
+                object obj = ResourceManager.GetObject("Default_A_stylized_logo_for_Game_Store_a_fusion_of_modern_gami_1_d832442e-1296-4b" +
+                        "a8-8fba-a160bd71a3d3_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo3 {
             get {
                 object obj = ResourceManager.GetObject("fondo3", resourceCulture);

@@ -32,20 +32,20 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btninicio = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelpadre = new System.Windows.Forms.Panel();
             this.btncarrito = new System.Windows.Forms.PictureBox();
             this.btnventas = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnUser = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btncarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnventas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -66,9 +66,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btninicio);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -90,28 +89,6 @@
             this.btninicio.Text = "Home";
             this.btninicio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btninicio.Click += new System.EventHandler(this.btninicio_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 40);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "G2G";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(18, 54);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(148, 5);
-            this.panel3.TabIndex = 2;
             // 
             // panel2
             // 
@@ -146,6 +123,7 @@
             this.btncarrito.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btncarrito.TabIndex = 42;
             this.btncarrito.TabStop = false;
+            this.btncarrito.Click += new System.EventHandler(this.btncarrito_Click);
             // 
             // btnventas
             // 
@@ -184,6 +162,16 @@
             this.btnUser.TabStop = false;
             this.btnUser.Click += new System.EventHandler(this.btnUser_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::inventario.Properties.Resources.Default_A_stylized_logo_for_Game_Store_a_fusion_of_modern_gami_1_d832442e_1296_4ba8_8fba_a160bd71a3d3_0;
+            this.pictureBox1.Location = new System.Drawing.Point(0, -10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 96);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // page1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -199,12 +187,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventario";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btncarrito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnventas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,13 +201,12 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label btninicio;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox btnUser;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelpadre;
         private System.Windows.Forms.PictureBox btnventas;
         private System.Windows.Forms.PictureBox btncarrito;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
