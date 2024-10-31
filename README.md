@@ -24,3 +24,11 @@ La base de datos usada es MySql:
   precio int NOT NULL
   )
 
+CREATE TABLE compras (
+  id_compra INT PRIMARY KEY AUTO_INCREMENT,
+  id_pro INT NOT NULL,
+  producto VARCHAR(45) NOT NULL,
+  cantidad INT NOT NULL,
+  precio INT NOT NULL,
+  FOREIGN KEY (id_pro) REFERENCES product(id_pro)
+)
