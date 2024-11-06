@@ -52,11 +52,6 @@ namespace inventario
                         DataTable dt = new DataTable();
                         adapter.Fill(dt);
 
-                        if (dt.Rows.Count == 0)
-                        {
-                            MessageBox.Show("No hay productos en el carrito.");
-                        }
-
                         gridCarrito.DataSource = dt;
                     }
                 }
@@ -64,6 +59,63 @@ namespace inventario
                 {
                     MessageBox.Show("Error al cargar el carrito: " + ex.Message);
                 }
+            }
+        }
+
+        private void btnbuyall_Click(object sender, EventArgs e)
+        {
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
+
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "DELETE FROM compras";
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("Todos los productos han sido comprados del carrito.");
+                    LoadDataToGrid();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al comprar los productos del carrito: " + ex.Message);
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (gridCarrito.SelectedRows.Count > 0)
+            {
+                int idProducto = Convert.ToInt32(gridCarrito.SelectedRows[0].Cells["id_pro"].Value);
+
+                string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
+                using (MySqlConnection con = new MySqlConnection(connectionString))
+                {
+                    try
+                    {
+                        con.Open();
+                        string query = "DELETE FROM compras WHERE id_pro = @id_pro"; 
+                        using (MySqlCommand cmd = new MySqlCommand(query, con))
+                        {
+                            cmd.Parameters.AddWithValue("@id_pro", idProducto);
+                            cmd.ExecuteNonQuery();
+                        }
+                        MessageBox.Show("El producto seleccionado ha sido eliminado del carrito.");
+                        LoadDataToGrid();  
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al eliminar el producto seleccionado del carrito: " + ex.Message);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un producto para eliminar.");
             }
         }
     }

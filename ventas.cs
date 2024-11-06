@@ -13,8 +13,6 @@ namespace inventario
             this.Load += ventas_Load;
             ConfigurarGrid();
 
-            // Asigna el evento al botón
-            btnagregarc.Click += btnagregarc_Click;
         }
 
         private void ConfigurarGrid()
@@ -57,11 +55,6 @@ namespace inventario
                             DataTable dt = new DataTable();
                             adapter.Fill(dt);
 
-                            if (dt.Rows.Count == 0)
-                            {
-                                MessageBox.Show("No se encontraron productos.");
-                            }
-
                             gridProducts.DataSource = dt;
                         }
                     }
@@ -85,9 +78,9 @@ namespace inventario
 
                 if (cantidad > 0)
                 {
-                    AgregarProductoAlCarrito(idProducto, producto, 1, precio);
+                    AgregarProductoACompras(idProducto, producto, 1, precio);
                     ActualizarCantidadProducto(idProducto, cantidad - 1);
-                    LoadDataToGrid();  // Actualiza el grid de inventario
+                    LoadDataToGrid(); 
                 }
                 else
                 {
@@ -100,7 +93,7 @@ namespace inventario
             }
         }
 
-        private void AgregarProductoAlCarrito(int idProducto, string producto, int cantidad, int precio)
+        private void AgregarProductoACompras(int idProducto, string producto, int cantidad, int precio)
         {
             string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
             using (MySqlConnection con = new MySqlConnection(connectionString))
