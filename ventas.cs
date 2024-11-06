@@ -10,8 +10,11 @@ namespace inventario
         public ventas()
         {
             InitializeComponent();
-            this.Load += ventas_Load;  
-            ConfigurarGrid();          
+            this.Load += ventas_Load;
+            ConfigurarGrid();
+
+            // Asigna el evento al botón
+            btnagregarc.Click += btnagregarc_Click;
         }
 
         private void ConfigurarGrid()
@@ -28,44 +31,119 @@ namespace inventario
             gridProducts.Columns["cantidad"].DataPropertyName = "cantidad";
             gridProducts.Columns["precio"].DataPropertyName = "precio";
 
-            gridProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;  
+            gridProducts.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void ventas_Load(object sender, EventArgs e)
         {
-            LoadDataToGrid();  
+            LoadDataToGrid();
         }
+
         private void LoadDataToGrid()
         {
-            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;"; 
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
 
             using (MySqlConnection con = new MySqlConnection(connectionString))
             {
                 try
                 {
-                    con.Open();  
-
-                    string query = "SELECT id_pro, producto, cantidad, precio FROM product";  
+                    con.Open();
+                    string query = "SELECT id_pro, producto, cantidad, precio FROM product";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, con))
                     {
                         using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
                         {
-                            DataTable dt = new DataTable();  
-                            adapter.Fill(dt);  
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
 
                             if (dt.Rows.Count == 0)
                             {
-                                MessageBox.Show("No se encontraron productos.");  
+                                MessageBox.Show("No se encontraron productos.");
                             }
 
-                            gridProducts.DataSource = dt;  
+                            gridProducts.DataSource = dt;
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al cargar los datos: " + ex.Message); 
+                    MessageBox.Show("Error al cargar los datos: " + ex.Message);
+                }
+            }
+        }
+
+        private void btnagregarc_Click(object sender, EventArgs e)
+        {
+            if (gridProducts.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = gridProducts.SelectedRows[0];
+                int idProducto = Convert.ToInt32(selectedRow.Cells["id_pro"].Value);
+                string producto = selectedRow.Cells["producto"].Value.ToString();
+                int cantidad = Convert.ToInt32(selectedRow.Cells["cantidad"].Value);
+                int precio = Convert.ToInt32(selectedRow.Cells["precio"].Value);
+
+                if (cantidad > 0)
+                {
+                    AgregarProductoAlCarrito(idProducto, producto, 1, precio);
+                    ActualizarCantidadProducto(idProducto, cantidad - 1);
+                    LoadDataToGrid();  // Actualiza el grid de inventario
+                }
+                else
+                {
+                    MessageBox.Show("No hay suficiente cantidad en el inventario.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un producto para agregar al carrito.");
+            }
+        }
+
+        private void AgregarProductoAlCarrito(int idProducto, string producto, int cantidad, int precio)
+        {
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "INSERT INTO compras (id_pro, producto, cantidad, precio) VALUES (@id_pro, @producto, @cantidad, @precio)";
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@id_pro", idProducto);
+                        cmd.Parameters.AddWithValue("@producto", producto);
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@precio", precio);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al agregar el producto al carrito: " + ex.Message);
+                }
+            }
+        }
+
+        private void ActualizarCantidadProducto(int idProducto, int nuevaCantidad)
+        {
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    string query = "UPDATE product SET cantidad = @cantidad WHERE id_pro = @id_pro";
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@cantidad", nuevaCantidad);
+                        cmd.Parameters.AddWithValue("@id_pro", idProducto);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al actualizar la cantidad del producto: " + ex.Message);
                 }
             }
         }
