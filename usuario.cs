@@ -77,11 +77,11 @@ namespace inventario
 
                         if (filasAfectadas > 0)
                         {
-                            Console.WriteLine("Usuario actualizado exitosamente.");
+                            MessageBox.Show("Usuario actualizado exitosamente.");
                         }
                         else
                         {
-                            Console.WriteLine("No se encontró el usuario con el Nombre proporcionado.");
+                            MessageBox.Show("No se encontró el usuario con el Nombre proporcionado.");
                         }
                     }
                 }
@@ -90,6 +90,11 @@ namespace inventario
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+        }
+
+        private void usuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
