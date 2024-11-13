@@ -140,5 +140,10 @@ namespace inventario
                 }
             }
         }
+
+        private void ventas_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
