@@ -64,6 +64,11 @@ namespace inventario
 
         private void btnbuyall_Click(object sender, EventArgs e)
         {
+            Form pago = new pago();
+            pago.Show();
+
+            this.Hide();
+
             string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
 
             using (MySqlConnection con = new MySqlConnection(connectionString))

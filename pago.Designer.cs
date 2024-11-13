@@ -61,6 +61,9 @@
             this.txtntarjeta.TabIndex = 32;
             this.txtntarjeta.Text = "Numero de Tarjeta";
             this.txtntarjeta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtntarjeta.TextChanged += new System.EventHandler(this.txtntarjeta_TextChanged);
+            this.txtntarjeta.Enter += new System.EventHandler(this.txtntarjeta_Enter);
+            this.txtntarjeta.Leave += new System.EventHandler(this.txtntarjeta_Leave);
             // 
             // label3
             // 
@@ -101,6 +104,8 @@
             this.txtfecha.TabIndex = 35;
             this.txtfecha.Text = "Fecha Expedicion";
             this.txtfecha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtfecha.Enter += new System.EventHandler(this.txtfecha_Enter);
+            this.txtfecha.Leave += new System.EventHandler(this.txtfecha_Leave);
             // 
             // label2
             // 
@@ -130,6 +135,8 @@
             this.txtcvc.TabIndex = 37;
             this.txtcvc.Text = "Pin";
             this.txtcvc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcvc.Enter += new System.EventHandler(this.txtcvc_Enter);
+            this.txtcvc.Leave += new System.EventHandler(this.txtcvc_Leave);
             // 
             // label4
             // 
@@ -159,6 +166,8 @@
             this.txtdireccion.TabIndex = 39;
             this.txtdireccion.Text = "Direccion(obligatorio)";
             this.txtdireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdireccion.Enter += new System.EventHandler(this.txtdireccion_Enter);
+            this.txtdireccion.Leave += new System.EventHandler(this.txtdireccion_Leave);
             // 
             // label5
             // 
@@ -188,6 +197,8 @@
             this.txtnombre.TabIndex = 41;
             this.txtnombre.Text = "Nombre del Titular";
             this.txtnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtnombre.Enter += new System.EventHandler(this.txtnombre_Enter);
+            this.txtnombre.Leave += new System.EventHandler(this.txtnombre_Leave);
             // 
             // label6
             // 
@@ -217,6 +228,8 @@
             this.txtcodigo.TabIndex = 43;
             this.txtcodigo.Text = "Codigo Postal";
             this.txtcodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtcodigo.Enter += new System.EventHandler(this.txtcodigo_Enter);
+            this.txtcodigo.Leave += new System.EventHandler(this.txtcodigo_Leave);
             // 
             // label7
             // 
@@ -245,6 +258,7 @@
             this.btncancelar.TabIndex = 45;
             this.btncancelar.Text = "Cancelar Pago";
             this.btncancelar.UseVisualStyleBackColor = false;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnpagar
             // 
@@ -261,6 +275,7 @@
             this.btnpagar.TabIndex = 46;
             this.btnpagar.Text = "Pagar";
             this.btnpagar.UseVisualStyleBackColor = false;
+            this.btnpagar.Click += new System.EventHandler(this.btnpagar_Click);
             // 
             // pago
             // 

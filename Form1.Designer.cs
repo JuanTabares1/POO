@@ -131,6 +131,7 @@
             this.txtuser.TabIndex = 29;
             this.txtuser.Text = "USUARIO";
             this.txtuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
             this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
             // 
