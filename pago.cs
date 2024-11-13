@@ -145,7 +145,8 @@ namespace inventario
 
         private void btnpagar_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Todos los productos han sido comprados exitosamente.");
+            this.Close();
         }
     }
 }

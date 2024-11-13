@@ -67,8 +67,6 @@ namespace inventario
             Form pago = new pago();
             pago.Show();
 
-            this.Hide();
-
             string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
 
             using (MySqlConnection con = new MySqlConnection(connectionString))
@@ -81,7 +79,6 @@ namespace inventario
                     {
                         cmd.ExecuteNonQuery();
                     }
-                    MessageBox.Show("Todos los productos han sido comprados del carrito.");
                     LoadDataToGrid();
                 }
                 catch (Exception ex)

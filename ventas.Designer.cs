@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridProducts = new System.Windows.Forms.DataGridView();
-            this.btncomprar = new System.Windows.Forms.Button();
             this.btnagregarc = new System.Windows.Forms.Button();
             this.txtSearch2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -98,21 +97,6 @@
             this.gridProducts.Size = new System.Drawing.Size(601, 302);
             this.gridProducts.TabIndex = 15;
             // 
-            // btncomprar
-            // 
-            this.btncomprar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.btncomprar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncomprar.FlatAppearance.BorderSize = 0;
-            this.btncomprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncomprar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncomprar.ForeColor = System.Drawing.Color.White;
-            this.btncomprar.Location = new System.Drawing.Point(684, 161);
-            this.btncomprar.Name = "btncomprar";
-            this.btncomprar.Size = new System.Drawing.Size(83, 30);
-            this.btncomprar.TabIndex = 16;
-            this.btncomprar.Text = "Comprar";
-            this.btncomprar.UseVisualStyleBackColor = false;
-            // 
             // btnagregarc
             // 
             this.btnagregarc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
@@ -161,11 +145,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch2);
             this.Controls.Add(this.btnagregarc);
-            this.Controls.Add(this.btncomprar);
             this.Controls.Add(this.gridProducts);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ventas";
             this.Text = "ventas";
             ((System.ComponentModel.ISupportInitialize)(this.gridProducts)).EndInit();
@@ -177,7 +160,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView gridProducts;
-        private System.Windows.Forms.Button btncomprar;
         private System.Windows.Forms.Button btnagregarc;
         private System.Windows.Forms.TextBox txtSearch2;
         private System.Windows.Forms.Label label1;
