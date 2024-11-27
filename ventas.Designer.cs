@@ -75,8 +75,7 @@
             this.gridProducts.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridProducts.EnableHeadersVisualStyles = false;
             this.gridProducts.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.gridProducts.Location = new System.Drawing.Point(54, 166);
-            this.gridProducts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridProducts.Location = new System.Drawing.Point(36, 108);
             this.gridProducts.MultiSelect = false;
             this.gridProducts.Name = "gridProducts";
             this.gridProducts.ReadOnly = true;
@@ -95,7 +94,7 @@
             this.gridProducts.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gridProducts.RowTemplate.Height = 25;
             this.gridProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridProducts.Size = new System.Drawing.Size(902, 465);
+            this.gridProducts.Size = new System.Drawing.Size(601, 302);
             this.gridProducts.TabIndex = 15;
             // 
             // btnagregarc
@@ -106,10 +105,9 @@
             this.btnagregarc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagregarc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagregarc.ForeColor = System.Drawing.Color.White;
-            this.btnagregarc.Location = new System.Drawing.Point(1026, 338);
-            this.btnagregarc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnagregarc.Location = new System.Drawing.Point(684, 220);
             this.btnagregarc.Name = "btnagregarc";
-            this.btnagregarc.Size = new System.Drawing.Size(124, 88);
+            this.btnagregarc.Size = new System.Drawing.Size(83, 57);
             this.btnagregarc.TabIndex = 17;
             this.btnagregarc.Text = "Agregar al Carrito";
             this.btnagregarc.UseVisualStyleBackColor = false;
@@ -120,12 +118,12 @@
             this.txtSearch2.BackColor = System.Drawing.Color.White;
             this.txtSearch2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSearch2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch2.Location = new System.Drawing.Point(148, 91);
-            this.txtSearch2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSearch2.Location = new System.Drawing.Point(99, 59);
             this.txtSearch2.Multiline = true;
             this.txtSearch2.Name = "txtSearch2";
-            this.txtSearch2.Size = new System.Drawing.Size(746, 26);
+            this.txtSearch2.Size = new System.Drawing.Size(497, 17);
             this.txtSearch2.TabIndex = 18;
+            this.txtSearch2.TextChanged += new System.EventHandler(this.txtSearch2_TextChanged);
             // 
             // label1
             // 
@@ -133,25 +131,25 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(274, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(183, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(472, 29);
+            this.label1.Size = new System.Drawing.Size(323, 20);
             this.label1.TabIndex = 19;
             this.label1.Text = "Busca el producto que quieres comprar";
             // 
             // ventas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1196, 758);
+            this.ClientSize = new System.Drawing.Size(797, 493);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch2);
             this.Controls.Add(this.btnagregarc);
             this.Controls.Add(this.gridProducts);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ventas";
             this.Text = "ventas";
             this.Load += new System.EventHandler(this.ventas_Load_1);

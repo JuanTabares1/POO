@@ -1,6 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace inventario
@@ -144,6 +146,39 @@ namespace inventario
         private void ventas_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtSearch2_TextChanged(object sender, EventArgs e)
+        {
+            string filter = txtSearch2.Text.ToLower();
+            string connectionString = "server=127.0.0.1;database=logins;uid=root;pwd=1234;";
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+
+                    string query = "SELECT id_pro, producto, cantidad, precio FROM product WHERE LOWER(producto) LIKE @filter";
+
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@filter", "%" + filter + "%");
+
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+
+                            gridProducts.DataSource = dt;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al buscar productos: " + ex.Message);
+                }
+            }
         }
     }
 }
